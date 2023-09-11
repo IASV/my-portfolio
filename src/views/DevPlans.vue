@@ -63,10 +63,103 @@ const plans: IPlan[] = [
       },
     ],
   },
+  {
+    label: 'Business',
+    text: 'Optimizado para negocios medianos y pequeños',
+    value: 600,
+    isHour: false,
+    textPromotion: '+2 mes de soporte gratis',
+    items: [
+      {
+        label: 'Diseño y/o desarrollo de página web',
+        isEnabled: true,
+        subItems: [
+          'Encabezado',
+          'Cuerpo',
+          'Enlaces',
+          'Imágenes y Multimedia',
+          'Pie de página',
+          'Elementos de diseño y estilo',
+          'Formularios',
+          'Texto descriptivo',
+          'Metaetiquetas',
+        ],
+      },
+      {
+        label: 'Interactividad avanzada',
+        isEnabled: true,
+        subItems: [
+          'Diseño responsivo',
+          'Animaciones y Transiciones',
+          'Incorporación de Redes Sociales',
+        ],
+      },
+      {
+        label: 'Administración del sitio web',
+        isEnabled: true,
+        subItems: [
+          'Búsqueda Avanzada',
+          'Base de Datos y Almacenamiento de Datos',
+          'Inicios de Sesión de Usuario',
+          'Blogs y Comentarios',
+          'Seguridad SSL y SQL',
+          'Optimización de Posicionamiento (SEO)',
+          'Analítica Web',
+          'Contenido Dinámico',
+          'Integración de Terceros',
+        ],
+      },
+    ],
+  },
+  {
+    label: 'Personalizado',
+    text: 'Contrata a tu programador por horas',
+    value: 8,
+    isHour: true,
+    textPromotion: '+Alcances del plan business',
+    items: [
+      {
+        label: 'App Mobile',
+        isEnabled: true,
+        subItems: [
+          'Use de Ract Native',
+          'Uso de Expó',
+          'Actualización de AppÞ',
+          'Empaquetados iOS y Android',
+          'Despliegue de App a TestFlight en AppStore',
+        ],
+      },
+      {
+        label: 'Implementación de Arquitecturas',
+        isEnabled: true,
+        subItems: [
+          'Concepto de Clean Architecture',
+          'Uso de Atomic Design',
+          'TDD en Python con PyTest',
+        ],
+      },
+      {
+        label: 'Infraestructura simple',
+        isEnabled: true,
+        subItems: [
+          'Serverless con AWS Lambda y FastAPI',
+          'Almacenamiento de datos con AWS S3',
+          'CI y CD',
+          'Automatización de despligues con GitHub Actions',
+          'Docker y Docker Compose',
+          'Manejo de entornos linux con Debian y Ubuntu',
+          'Control de versiones con Git y GitHub',
+          'API Rest con FastAPI',
+          'Integración de SMTP con Brevo CRM',
+          'Uso de Firebase para alojamiento del Frontend',
+        ],
+      },
+    ],
+  },
 ];
 </script>
 <template>
-  <div class="container">
+  <div class="container" id="plans">
     <h1>Planes de desarrollo</h1>
     <div class="plans">
       <CardPlan
@@ -89,5 +182,15 @@ const plans: IPlan[] = [
   flex-direction: column;
   align-items: center;
   background-color: var(--theme-color-dark-blue);
+  padding-top: 50px;
+}
+
+.container .plans {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: start;
 }
 </style>

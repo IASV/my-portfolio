@@ -2,11 +2,11 @@
 :root {
   --theme-color-dark: #111828;
   --theme-color-dark-blue: #152034;
-  --theme-color-dark-gray: #8EA1C6;
-  --theme-color-blue: #2564E5;
-  --theme-color-light-blue: #5990FF;
-  --theme-color-gray: #ADB7CA;
-  --theme-color-white: #FCFEFF;
+  --theme-color-dark-gray: #8ea1c6;
+  --theme-color-blue: #2564e5;
+  --theme-color-light-blue: #5990ff;
+  --theme-color-gray: #adb7ca;
+  --theme-color-white: #fcfeff;
 }
 
 /* semantic color variables for this project */
@@ -27,12 +27,47 @@ body {
   min-height: 100vh;
   color: var(--color-text);
   background: var(--color-background);
-  transition: color 0.5s, background-color 0.5s;
+  transition:
+    color 0.5s,
+    background-color 0.5s;
   line-height: 1.6;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
   font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #8f54a0 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--theme-color-dark);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--theme-color-white);
+  border-radius: 10px;
+  border: 5px solid var(--theme-color-dark);
 }

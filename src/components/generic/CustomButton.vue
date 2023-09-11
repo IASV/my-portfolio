@@ -2,16 +2,17 @@
 defineProps<{
   label?: string;
   onPress?: Function;
+  link?: string;
 }>();
 
 const noOnPress = () => console.log('button');
 </script>
 <template>
-  <button @click="onPress ? onPress : noOnPress">{{ label }}</button>
+  <a :href="link" @click="onPress ? onPress : noOnPress"> {{ label }} </a>
 </template>
 
 <style scoped>
-button {
+a {
   outline: none;
   border: none;
   background-color: var(--theme-color-blue);
@@ -20,9 +21,11 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition-duration: 0.25s;
+  text-decoration: none;
+  user-select: none;
 }
 
-button:hover {
+a:hover {
   background-color: var(--theme-color-dark-blue);
 }
 </style>

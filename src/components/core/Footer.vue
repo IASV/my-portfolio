@@ -29,4 +29,10 @@ import {
   display: flex;
   gap: 20px;
 }
+
+.socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>

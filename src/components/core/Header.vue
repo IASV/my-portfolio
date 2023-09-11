@@ -6,12 +6,12 @@ import CustomButton from '@/components/generic/CustomButton.vue';
     <span>iasuarez.dev</span>
     <ul>
       <li><a href="#">Inicio</a></li>
-      <li><a href="#">Sobre mi</a></li>
-      <li><a href="#">Experiencia</a></li>
+      <li><a href="#about">Sobre mi</a></li>
+      <li><a href="#exp">Experiencia</a></li>
       <li><a href="#">Proyectos</a></li>
       <li><a href="#">Habilidades</a></li>
       <li><a href="#">Contacto</a></li>
-      <li><CustomButton label="Compra un plan" /></li>
+      <li><CustomButton label="Compra un plan" link="#plans"/></li>
     </ul>
   </div>
 </template>
@@ -20,7 +20,8 @@ import CustomButton from '@/components/generic/CustomButton.vue';
 .container {
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 15px 20px;
+  padding-right: 5px;
   align-items: center;
 }
 

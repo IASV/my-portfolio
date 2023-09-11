@@ -84,6 +84,12 @@ import {
   gap: 20px;
 }
 
+.socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .image {
   width: 268px;
   height: 268px;

@@ -34,6 +34,7 @@ defineProps<{
     <div class="value">
       <span>USD</span>
       <h1 class="price">${{ value?.toString() }}</h1>
+      <span style="font-weight: 500;" v-if="isHour">/hora</span>
     </div>
     <span class="textPromotion">{{ textPromotion }}</span>
     <CustomButton label="Comprar este plan" />
@@ -68,14 +69,20 @@ defineProps<{
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start !important;
   text-align: center;
   background-color: var(--theme-color-dark) !important;
   border-radius: 15px;
   padding: 10px;
   padding-top: 40px;
-  margin: 10px;
   gap: 5px;
+  transition-duration: 0.25s;
+  width: 365px;
+  user-select: none;
+}
+
+.container:hover {
+  transform: scale(1.1);
 }
 
 .container .label {
@@ -140,12 +147,12 @@ defineProps<{
 .items {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: var(--theme-color-dark-blue);
   border-radius: 10px;
   padding: 10px 20px;
   margin-top: 30px;
   gap: 10px;
+  width: 100%;
 }
 
 .items span {
@@ -167,6 +174,10 @@ defineProps<{
   flex-direction: column;
   align-items: start;
   color: var(--theme-color-white);
+}
+
+.items .options ul li {
+  text-align: left;
 }
 
 .items .options .isEnabled {
