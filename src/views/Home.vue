@@ -18,10 +18,10 @@ import {
         escribo.</span
       >
       <div class="socials">
-        <a href="#">
+        <a href="https://www.linkedin.com/in/iasuarez/" target="_blank">
           <IconBrandLinkedin color="white" stroke-width="1.5" :size="25" />
         </a>
-        <a href="#">
+        <a href="https://github.com/IASV" target="_blank">
           <IconBrandGithub color="white" stroke-width="1.5" :size="25" />
         </a>
         <a href="#">

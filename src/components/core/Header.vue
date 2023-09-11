@@ -5,12 +5,12 @@ import CustomButton from '@/components/generic/CustomButton.vue';
   <div class="container">
     <span>iasuarez.dev</span>
     <ul>
-      <li>Inicio</li>
-      <li>Sobre mi</li>
-      <li>Experiencia</li>
-      <li>Proyectos</li>
-      <li>Habilidades</li>
-      <li>Contacto</li>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Sobre mi</a></li>
+      <li><a href="#">Experiencia</a></li>
+      <li><a href="#">Proyectos</a></li>
+      <li><a href="#">Habilidades</a></li>
+      <li><a href="#">Contacto</a></li>
       <li><CustomButton label="Compra un plan" /></li>
     </ul>
   </div>
@@ -29,5 +29,10 @@ ul {
   list-style: none;
   gap: 25px;
   align-items: center;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--theme-color-white);
 }
 </style>
