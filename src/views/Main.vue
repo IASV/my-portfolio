@@ -9,6 +9,7 @@ import Projects from '@/views/Projects.vue';
   <Home />
   <AboutMe />
   <Experience />
+  <Projects />
   <DevPlans />
 </template>
 
