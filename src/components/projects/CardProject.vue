@@ -55,11 +55,22 @@ defineProps<{
   border: 5px solid var(--theme-color-dark);
 }
 
+.container .image {
+  height: 220px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--theme-color-dark-blue);
+  border-radius: 5px;
+}
+
 .container .info {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 5px 20px;
+  padding-top: 20px;
 }
 
 .container .info h2 {
@@ -88,9 +99,11 @@ defineProps<{
 
 <style>
 .container .image img {
-  max-width: 100%;
-  height: auto;
-  opacity: 0.6;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.8;
 }
 
 .container .tags {
