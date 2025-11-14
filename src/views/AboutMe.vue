@@ -6,8 +6,8 @@
       <div class="info">
         <h1>Sobre Mi</h1>
         <p>
-          Ingeniero de sistemas y apasionado desarrollador de software con +2
-          años de experiencia como desarrollador Backend y FullStack, con
+          Ingeniero de sistemas y apasionado desarrollador de software con +3
+          años de experiencia como Mobile Tech Lead, desarrollador Backend y FullStack, con
           habilidades y conocimientos en varios lenguajes, tecnologías y frameworks.
         </p>
         <p>

@@ -12,7 +12,7 @@ import {
         Hola, Soy <br />
         Iván Suarez
       </h1>
-      <h3>Desarrollador de software</h3>
+      <h3>Mobile Tech Lead & Desarrollador de software</h3>
       <span
         >Mi pasión por programar se refleja en cada línea de código que
         escribo.</span
