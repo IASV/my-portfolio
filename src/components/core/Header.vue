@@ -24,7 +24,7 @@ const closeMenu = () => {
       <li><a href="#exp">Experiencia</a></li>
       <li><a href="#projects">Proyectos</a></li>
       <li><a href="#technical">Habilidades</a></li>
-      <li><a href="#">Contacto</a></li>
+      <li><a href="#contact">Contacto</a></li>
       <li><CustomButton label="Compra un plan" link="#plans"/></li>
     </ul>
 
@@ -45,7 +45,7 @@ const closeMenu = () => {
         <li><a href="#exp" @click="closeMenu">Experiencia</a></li>
         <li><a href="#projects" @click="closeMenu">Proyectos</a></li>
         <li><a href="#technical" @click="closeMenu">Habilidades</a></li>
-        <li><a href="#" @click="closeMenu">Contacto</a></li>
+        <li><a href="#contact" @click="closeMenu">Contacto</a></li>
       </ul>
     </div>
   </div>
@@ -56,17 +56,10 @@ const closeMenu = () => {
   display: flex;
   justify-content: space-between;
   padding: 15px 20px;
-  padding-right: 5px;
   align-items: center;
   flex-wrap: wrap;
   gap: 15px;
   position: relative;
-}
-
-.logo {
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--theme-color-white);
 }
 
 .desktop-menu {

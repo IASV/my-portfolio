@@ -226,6 +226,7 @@ const plans: IPlan[] = [
 @media (max-width: 480px) {
   .container {
     padding: 40px 10px;
+    padding-bottom: 10px;
   }
 
   .container h1 {

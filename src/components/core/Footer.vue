@@ -24,6 +24,7 @@ import {
   justify-content: space-between;
   padding: 10px 20px;
   align-items: center;
+  background-color: var(--theme-color-dark-blue);
 }
 .socials {
   display: flex;
