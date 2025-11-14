@@ -1,35 +1,44 @@
 <script setup lang="ts">
 import Preview from '@/components/experience/Preview.vue';
 
+interface Position {
+  job: string;
+  date: string;
+  items: string[];
+}
+
 interface IExp {
   job?: string;
   date?: string;
   business?: string;
   location?: string;
   items?: string[];
+  positions?: Position[];
 }
 
 const exps: IExp[] = [
   {
-    job: 'Mobile Tech Lead',
-    date: '10/2025 - Presente',
     business: 'OnStageObra',
     location: 'Santiago, Chile',
-    items: [
-      'Lidero la dirección técnica y estratégica de los productos móviles.',
-      'Aseguro el rendimiento, calidad y una experiencia de usuario excepcional.',
-      'Gestión del equipo de desarrollo móvil y definición de arquitectura técnica.',
-    ],
-  },
-  {
-    job: 'Frontend & Mobile Developer',
-    date: '01/2024 - 10/2025',
-    business: 'OnStageObra',
-    location: 'Santiago, Chile',
-    items: [
-      'Desarrollo e implementación de nuevas funcionalidades en entornos web y móviles utilizando React Native y JavaScript.',
-      'Creación de interfaces modernas y optimización de rendimiento.',
-      'Mantenimiento del código base del producto móvil principal.',
+    positions: [
+      {
+        job: 'Mobile Tech Lead',
+        date: '10/2025 - Presente',
+        items: [
+          'Lidero la dirección técnica y estratégica de los productos móviles.',
+          'Aseguro el rendimiento, calidad y una experiencia de usuario excepcional.',
+          'Gestión del equipo de desarrollo móvil y definición de arquitectura técnica.',
+        ],
+      },
+      {
+        job: 'Frontend & Mobile Developer',
+        date: '01/2024 - 10/2025',
+        items: [
+          'Desarrollo e implementación de nuevas funcionalidades en entornos web y móviles utilizando React Native y JavaScript.',
+          'Creación de interfaces modernas y optimización de rendimiento.',
+          'Mantenimiento del código base del producto móvil principal.',
+        ],
+      },
     ],
   },
   {
@@ -121,6 +130,7 @@ const exps: IExp[] = [
       :business="exp.business"
       :location="exp.location"
       :items="exp.items"
+      :positions="exp.positions"
     />
   </div>
 </template>
