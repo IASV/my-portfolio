@@ -19,18 +19,18 @@ interface IProject {
 
 const projects: IProject[] = [
   {
-    label: 'QR Attendance',
+    label: 'Asistencia UPC',
     text: 'Desarrollo de una app mobile para el control de asistencia usando QR en la cual se utilizan tecnologías como React Native, Expo, MongoDB, Vercel, TypeScript, Python y FastAPI.',
     link: '#',
     ghLink: '#',
-    image: '../../assets/helado.jpeg',
+    image: '../../assets/qrassistanceImage.jpeg',
   },
   {
     label: 'Mis Facturas',
     text: 'Desarrollo de una app mobile para la gestión de los gastos personales en la cual se utilizan tecnologías como React Native, Expo, MongoDB, AWS S3, TypeScript, Python y FastAPI.',
     link: '#',
     ghLink: '#',
-    image: '../../assets/helado.jpeg',
+    image: '../../assets/misFacturasImagen.jpeg',
   },
 ];
 </script>
@@ -45,7 +45,7 @@ const projects: IProject[] = [
         :gh-link="projects[0].ghLink"
       >
         <template v-slot:image>
-          <img src="../assets/helado.jpeg" alt="QR Attendance" />
+          <img src="../assets/qrassistanceImage.jpeg" alt="Asistencia UPC" />
         </template>
         <template v-slot:tags>
           <TagProject label="React Native">
@@ -69,7 +69,7 @@ const projects: IProject[] = [
         :gh-link="projects[1].ghLink"
       >
         <template v-slot:image>
-          <img src="../assets/helado.jpeg" alt="Mis Facturas" />
+          <img src="../assets/misFacturasImagen.jpeg" alt="Mis Facturas" />
         </template>
         <template v-slot:tags>
           <TagProject label="React Native">
