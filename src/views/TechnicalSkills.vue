@@ -45,6 +45,14 @@ const technicalSkills: TechCategory[] = [
     ],
   },
   {
+    category: 'Inteligencia Artificial (IA)',
+    items: [
+      { name: 'ChatGPT' },
+      { name: 'Claude' },
+      { name: 'Cursor' },
+    ],
+  },
+  {
     category: 'DevOps',
     items: [
       {
