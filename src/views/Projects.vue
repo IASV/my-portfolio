@@ -97,7 +97,7 @@ const projects: IProject[] = [
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding: 100px 0px;
+  padding: 100px 20px;
 }
 
 .content h1 {
@@ -110,5 +110,36 @@ const projects: IProject[] = [
   gap: 30px;
   justify-content: center;
   max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 60px 15px;
+  }
+
+  .content h1 {
+    margin-bottom: 35px;
+    font-size: 36px;
+  }
+
+  .projects-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 40px 10px;
+  }
+
+  .content h1 {
+    margin-bottom: 25px;
+    font-size: 32px;
+  }
+
+  .projects-grid {
+    gap: 15px;
+    width: 100%;
+  }
 }
 </style>

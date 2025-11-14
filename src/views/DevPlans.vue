@@ -182,7 +182,13 @@ const plans: IPlan[] = [
   flex-direction: column;
   align-items: center;
   background-color: var(--theme-color-dark-blue);
+  padding-horizontal: 10px;
   padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.container h1 {
+  font-size: 44px;
 }
 
 .container .plans {
@@ -192,5 +198,45 @@ const plans: IPlan[] = [
   gap: 50px;
   justify-content: center;
   align-items: start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+@media (max-width: 1200px) {
+  .container .plans {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .container h1 {
+    font-size: 36px;
+  }
+
+  .container .plans {
+    margin-top: 35px;
+    margin-bottom: 60px;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 40px 10px;
+  }
+
+  .container h1 {
+    font-size: 32px;
+  }
+
+  .container .plans {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    gap: 20px;
+    width: 100%;
+  }
 }
 </style>

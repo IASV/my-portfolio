@@ -27,7 +27,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 100px 0px;
+  padding: 100px 20px;
 }
 
 .container .content {
@@ -35,6 +35,7 @@
   display: flex;
   gap: 0px;
   max-width: 800px;
+  width: 100%;
   border-radius: 15px;
   border: 5px solid var(--theme-color-dark);
   overflow: hidden;
@@ -84,5 +85,45 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 60px 15px;
+  }
+
+  .container .content:hover {
+    transform: scale(1.02);
+  }
+
+  .info {
+    padding: 30px 25px;
+  }
+
+  .info h1 {
+    font-size: 32px;
+  }
+
+  .info p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 40px 10px;
+  }
+
+  .info {
+    padding: 20px 20px;
+  }
+
+  .info h1 {
+    font-size: 28px;
+  }
+
+  .info p {
+    font-size: 12px;
+  }
 }
 </style>

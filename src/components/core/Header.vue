@@ -23,6 +23,13 @@ import CustomButton from '@/components/generic/CustomButton.vue';
   padding: 15px 20px;
   padding-right: 5px;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.container span {
+  font-size: 18px;
+  font-weight: 600;
 }
 
 ul {
@@ -30,10 +37,30 @@ ul {
   list-style: none;
   gap: 25px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 ul li a {
   text-decoration: none;
   color: var(--theme-color-white);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 15px;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  ul li {
+    width: 100%;
+  }
 }
 </style>

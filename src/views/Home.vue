@@ -40,7 +40,8 @@ import {
   justify-content: center;
   align-items: center;
   height: 60vh;
-  gap: 50px
+  gap: 50px;
+  padding: 20px;
 }
 
 .info {
@@ -99,5 +100,57 @@ import {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    min-height: 60vh;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .info {
+    text-align: center;
+    align-items: center;
+  }
+
+  .info h1 {
+    font-size: 40px;
+  }
+
+  .info h3 {
+    font-size: 18px;
+  }
+
+  .info span {
+    max-width: 300px;
+  }
+
+  .image {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info h1 {
+    font-size: 32px;
+  }
+
+  .info h3 {
+    font-size: 16px;
+  }
+
+  .info span {
+    font-size: 13px;
+  }
+
+  .image {
+    width: 150px;
+    height: 150px;
+  }
 }
 </style>

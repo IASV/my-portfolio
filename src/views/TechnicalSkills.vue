@@ -196,5 +196,77 @@ const technicalSkills: TechCategory[] = [
   background-color: var(--theme-color-dark-blue);
   border-radius: 8px;
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 60px 15px;
+  }
+
+  .content {
+    gap: 35px;
+  }
+
+  .content h1 {
+    font-size: 36px;
+  }
+
+  .tech-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .tech-category {
+    padding: 20px;
+  }
+
+  .tech-category:hover {
+    transform: scale(1.01);
+  }
+
+  .tech-category h2 {
+    font-size: 22px;
+  }
+
+  .item-name {
+    font-size: 15px;
+  }
+
+  .sub-items {
+    margin-left: 10px;
+  }
+
+  .sub-item {
+    font-size: 13px;
+    padding: 3px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 40px 10px;
+  }
+
+  .content h1 {
+    font-size: 32px;
+  }
+
+  .tech-category {
+    padding: 18px;
+  }
+
+  .tech-category h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .item-name {
+    font-size: 14px;
+  }
+
+  .sub-item {
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+}
 </style>
 

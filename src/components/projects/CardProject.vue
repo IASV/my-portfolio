@@ -49,6 +49,7 @@ defineProps<{
   display: flex;
   flex-direction: column;
   max-width: 400px;
+  width: 100%;
   background-color: var(--theme-color-dark);
   border-radius: 10px;
   overflow: hidden;
@@ -94,6 +95,57 @@ defineProps<{
   justify-content: end;
   gap: 10px;
   padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 350px;
+  }
+
+  .container .image {
+    height: 200px;
+  }
+
+  .container .info {
+    padding: 5px 15px;
+    padding-top: 15px;
+  }
+
+  .container .info h2 {
+    font-size: 18px;
+  }
+
+  .container .info p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    border: 3px solid var(--theme-color-dark);
+  }
+
+  .container .image {
+    height: 180px;
+  }
+
+  .container .info {
+    padding: 5px 12px;
+    padding-top: 12px;
+  }
+
+  .container .info h2 {
+    font-size: 17px;
+  }
+
+  .container .info p {
+    font-size: 12px;
+  }
+
+  .container .socials {
+    padding: 8px;
+  }
 }
 </style>
 

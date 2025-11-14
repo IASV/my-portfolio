@@ -87,5 +87,59 @@ const skills: string[] = [
   line-height: normal;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 60px 15px;
+  }
+
+  .content {
+    gap: 35px;
+  }
+
+  .content h1 {
+    font-size: 36px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  .skill-card {
+    padding: 20px 20px;
+  }
+
+  .skill-card span {
+    font-size: 16px;
+  }
+
+  .skill-card:hover {
+    transform: scale(1.02);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 40px 10px;
+  }
+
+  .content h1 {
+    font-size: 32px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .skill-card {
+    padding: 18px 15px;
+  }
+
+  .skill-card span {
+    font-size: 15px;
+  }
+}
 </style>
 

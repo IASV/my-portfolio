@@ -78,6 +78,7 @@ defineProps<{
   gap: 5px;
   transition-duration: 0.25s;
   width: 365px;
+  max-width: 100%;
   user-select: none;
 }
 
@@ -111,6 +112,7 @@ defineProps<{
   display: flex;
   flex-direction: row;
   align-items: first baseline;
+  justify-content: center;
 }
 
 .container .value span {
@@ -185,5 +187,106 @@ defineProps<{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    padding-top: 30px;
+  }
+
+  .container:hover {
+    transform: scale(1.02);
+  }
+
+  .container .label {
+    font-size: 20px;
+  }
+
+  .container .text {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .container .value .price {
+    font-size: 48px;
+  }
+
+  .container .value span {
+    font-size: 13px;
+  }
+
+  .container .textPromotion {
+    font-size: 13px;
+    margin-bottom: 25px;
+  }
+
+  .items {
+    padding: 10px 15px;
+    margin-top: 25px;
+  }
+
+  .items span {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    padding-top: 25px;
+  }
+
+  .container .label {
+    font-size: 19px;
+    margin-bottom: 6px;
+  }
+
+  .container .text {
+    font-size: 12px;
+    margin-bottom: 18px;
+  }
+
+  .container .value {
+    flex-wrap: wrap;
+  }
+
+  .container .value .price {
+    font-size: 42px;
+  }
+
+  .container .value span {
+    font-size: 12px;
+  }
+
+  .container .textPromotion {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .items {
+    padding: 10px 12px;
+    margin-top: 20px;
+  }
+
+  .items span {
+    font-size: 14px;
+  }
+
+  .items .options {
+    margin-top: 12px;
+  }
+
+  .items .options ul li {
+    font-size: 13px;
+  }
+
+  .items .options .isEnabled {
+    padding-left: 10px;
+  }
 }
 </style>

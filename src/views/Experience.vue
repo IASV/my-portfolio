@@ -147,4 +147,26 @@ const exps: IExp[] = [
 .content .label {
   margin-bottom: 50px;
 }
+
+@media (max-width: 768px) {
+  .content {
+    padding: 60px 15px;
+  }
+
+  .content .label {
+    margin-bottom: 35px;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 40px 10px;
+  }
+
+  .content .label {
+    margin-bottom: 25px;
+    font-size: 32px;
+  }
+}
 </style>

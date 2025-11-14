@@ -50,10 +50,14 @@ defineProps<{
             </div>
           </div>
         </div>
-        <div class="right">
+        <div class="right desktop-only">
           <h1>{{ business }}</h1>
           <span>{{ location }}</span>
         </div>
+      </div>
+      <div class="company-info mobile-only">
+        <h1>{{ business }}</h1>
+        <span>{{ location }}</span>
       </div>
     </div>
     
@@ -64,7 +68,7 @@ defineProps<{
           <h1>{{ job }}</h1>
           <span>{{ date }}</span>
         </div>
-        <div class="right">
+        <div class="right desktop-only">
           <h1>{{ business }}</h1>
           <span>{{ location }}</span>
         </div>
@@ -82,6 +86,10 @@ defineProps<{
             </ul>
           </n-collapse-item>
         </n-collapse>
+      </div>
+      <div class="company-info mobile-only">
+        <h1>{{ business }}</h1>
+        <span>{{ location }}</span>
       </div>
     </div>
   </div>
@@ -260,5 +268,176 @@ defineProps<{
   color: var(--theme-color-gray);
   text-align: left;
   font-size: 16px;
+}
+
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.company-info {
+  margin-top: 20px;
+  padding-left: 0px;
+}
+
+.company-info h1 {
+  color: var(--theme-color-dark-gray);
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+}
+
+.company-info span {
+  color: var(--theme-color-gray);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 95%;
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 15px 15px;
+  }
+
+  .container:hover {
+    transform: scale(1.02);
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .header .left h1 {
+    font-size: 22px;
+  }
+
+  .header span {
+    font-size: 14px;
+  }
+
+  .position-info h2 {
+    font-size: 22px;
+  }
+
+  .position-date {
+    font-size: 14px;
+  }
+
+  .step-indicator {
+    left: -20px;
+  }
+
+  .step-dot {
+    width: 12px;
+    height: 12px;
+    border: 3px solid var(--theme-color-dark);
+  }
+
+  .step-line {
+    width: 4px;
+  }
+
+  .container .content ul li {
+    font-size: 14px;
+  }
+
+  .company-info {
+    margin-top: 15px;
+  }
+
+  .company-info h1 {
+    font-size: 20px;
+  }
+
+  .company-info span {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 12px 12px;
+    border: 3px solid var(--theme-color-dark);
+  }
+
+  .container:hover {
+    border-color: var(--theme-color-blue);
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .header-with-positions {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header .left h1,
+  .position-info h2 {
+    font-size: 20px;
+  }
+
+  .header span,
+  .position-date {
+    font-size: 13px;
+  }
+
+  .step-indicator {
+    left: -15px;
+  }
+
+  .step-dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .step-line {
+    width: 3px;
+    min-height: 80px;
+  }
+
+  .position-step {
+    min-height: 120px;
+  }
+
+  .container .content ul li {
+    font-size: 13px;
+  }
+
+  .company-info {
+    margin-top: 12px;
+  }
+
+  .company-info h1 {
+    font-size: 18px;
+  }
+
+  .company-info span {
+    font-size: 12px;
+  }
 }
 </style>
